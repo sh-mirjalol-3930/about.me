@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:rgb(0, 0, 0) ;
+}
+.head{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 40px;
+    /* padding: 20px; */
+    font-family: monospace;
+}
+.head img{
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 100px #0059ff;
+    transition: all 0.4s ease;
+}
+.head img:hover{
+    box-shadow: 0px 0px 5px #00b7ff;
+    transition: all 0.5s ease;
+}
+.head h1,h3{
+    color: white;
+}
+.head h1{
+    font-size: 40px;
+    
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+}
+.title a{
+    text-shadow: 0px 0px 20px #00b7ff;
+    font-family: monospace;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.title a:hover{
+    text-shadow: 0px 0px 5px #00b7ff;
+    transition: all 0.5s ease;
+
+}
+
+.link a{
+    font-family: monospace;
+    color: #00b7ff;
+    text-decoration: none;
+}
+
+.head h1,h3{
+    text-shadow: 0px 0px 50px #00b7ff;
+    transition: all 0.5s ease;
+}
+.head h1:hover{
+    text-shadow: 0px 0px 5px #00b7ff;
+    transition: all 0.5s ease;
+}
+.head h3:hover{
+    text-shadow: 0px 0px 5px #00b7ff;
+    transition: all 0.5s ease;
+}
