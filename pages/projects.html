@@ -8,19 +8,73 @@
 </head>
 <body>
     <div class="container">
+        <button><a href="../index.html"> < home</a></button>
         <div class="title">
             <h1>it's not all ❌</h1>
         </div>
-        <div class="links">
-            <a href="https://lesson-git.vercel.app/">my first project</a>
-            <a href="https://lesson-git-2.vercel.app/">my second project</a>
+        <div class="row">
+            <div class="text">
+                <b>about my projects</b>
+                <p>Bular hammasi mening mashg'ulotlarim va vazifalarim . Men bularni hammasini vs.code orqali yasaganman , hali unchalik yaxshi bilmayman va hozir men shularni o'rganyapman. Hozircha bittasini yasashim uchun taxminan 1 kecha vaqtim ketayapti</p>
+            </div>
+            <div class="links">
+                <a href="https://1-project-mu.vercel.app/">< my first project ></a>
+                <a href="https://lesson-git-2.vercel.app/">< AIR lines ></a>
+                <div class="line">
+                    <a href="https://my-forms-teal.vercel.app/">< forms-project ></a>
+                    <a href="https://forms-pro.vercel.app/">< forms-upgrate ></a>
+                </div>
+                <a href="https://building-project-eight.vercel.app/">< building-project ></a>
+                <a href="https://artel-project.vercel.app/">< ARTEL project ></a>
+                <a href="https://lesson-hover.vercel.app/">< hover-header lesson ></a>
+                <a href="https://lesson-git.vercel.app/">< jacket project ></a>
+                <a href="https://dark-mode-eight-rosy.vercel.app/">< dark-mode old project ></a>
+            </div>
+            <div class="pic">
+                <img src="../images/coding-svg-clipart-original.png" alt="surat">
+            </div>
         </div>
     </div>
+
+
+
+
+
+
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
 
     <script>
         const links = document.querySelectorAll('.links a');
         links.forEach(link => link.setAttribute('target', '_blank'));
-    </script>
+
+
+
+
+
+                // Tugmani tanlaymiz
+        const backToTop = document.getElementById('backToTop');
+        
+        // Sahifa skroll bo‘lganda tugmani ko‘rsatamiz
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // 300px dan pastga tushganda
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        
+        // Tugma bosilganda yuqoriga qaytamiz
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+            </script>
+    
     
 </body>
 </html>
