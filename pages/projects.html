@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/projects.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>it's not all ❌</h1>
+        </div>
+        <div class="links">
+            <a href="https://lesson-git.vercel.app/">my first project</a>
+            <a href="https://lesson-git-2.vercel.app/">my second project</a>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('.links a');
+        links.forEach(link => link.setAttribute('target', '_blank'));
+    </script>
+    
+</body>
+</html>

@@ -123,4 +123,18 @@ h1{
     color: white;
     font-size: 20px;
     margin-bottom: 20px;
+    transition: all 0.2s ease;
+    text-shadow: 0 0 50px white;
+}
+
+.right a:hover{
+    text-shadow: 0 0 10px white;
+}
+
+
+.number{
+    position: absolute;
+    margin-left: 1150px;
+    color: white;
+
 }
