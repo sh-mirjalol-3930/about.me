@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <button><a href="../index.html"> < home</a></button>
+        <a class="back" href="../index.html"> < home</a>
         <div class="title">
             <h1>it's not all ❌</h1>
         </div>
         <div class="row">
             <div class="text">
                 <b>about my projects</b>
-                <p>Bular hammasi mening mashg'ulotlarim va vazifalarim . Men bularni hammasini vs.code orqali yasaganman , hali unchalik yaxshi bilmayman va hozir men shularni o'rganyapman. Hozircha bittasini yasashim uchun taxminan 1 kecha vaqtim ketayapti</p>
+                <p>Bular hammasi mening mashg'ulotlarim va vazifalarim . Men bularni hammasini vs.code orqali yasaganman , hali unchalik yaxshi bilmayman va hozir men shularni o'rganyapman. Hozircha bittasini yasashim uchun sal kam 2 kun vaqtim ketayapti</p>
             </div>
             <div class="links">
                 <a href="https://1-project-mu.vercel.app/">< my first project ></a>
@@ -28,10 +28,56 @@
                 <a href="https://artel-project.vercel.app/">< ARTEL project ></a>
                 <a href="https://lesson-hover.vercel.app/">< hover-header lesson ></a>
                 <a href="https://lesson-git.vercel.app/">< jacket project ></a>
-                <a href="https://dark-mode-eight-rosy.vercel.app/">< dark-mode old project ></a>
+                <a href="https://dark-mode-eight-rosy.vercel.app/">< dark-mode project ></a>
             </div>
             <div class="pic">
                 <img src="../images/coding-svg-clipart-original.png" alt="surat">
+            </div>
+        </div>
+
+
+        <div class="pics">
+            <div class="row">
+                <div>
+                    <img src="../images/my-first-project.png" alt="">
+                    <p>my first project <a href="https://1-project-mu.vercel.app/"><img src="../images/open.svg" alt=""></a></p>
+                </div>
+                <div>
+                    <img src="../images/air-lines.png" alt="">
+                    <p>AIR lines <a href="https://lesson-git-2.vercel.app/"><img src="../images/open.svg" alt=""></a> </p>
+                </div>
+                <div>
+                    <img src="../images/forms.png" alt="">
+                    <p>forms <a href="https://my-forms-teal.vercel.app/"><img src="../images/open.svg" alt=""></a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="../images/forms-up.png" alt="">
+                    <p>forms upgrate <a href="https://forms-pro.vercel.app/"><img src="../images/open.svg" alt=""></a></p>    
+                </div>
+                <div>
+                    <img src="../images/building.png" alt="">
+                    <p>building project <a href="https://building-project-eight.vercel.app/"><img src="../images/open.svg" alt=""></a></p>
+                </div>
+                <div>
+                    <img src="../images/artel.png" alt="">
+                    <p>artel project <a href="https://artel-project.vercel.app/"><img src="../images/open.svg" alt=""></a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="../images/hv-hd.png" alt="">
+                    <p>hover header lesson <a href="https://lesson-hover.vercel.app/"><img src="../images/open.svg" alt=""></a></p>
+                </div>
+                <div>
+                    <img src="../images/jacket.png" alt="">
+                    <p>jacket project <a href="https://lesson-git.vercel.app/"><img src="../images/open.svg" alt=""></a></p>
+                </div>
+                <div>
+                    <img src="../images/dark-mod.png" alt="">
+                    <p>dark mode <a href="https://dark-mode-eight-rosy.vercel.app/"><img src="../images/open.svg" alt=""></a></p>
+                </div>
             </div>
         </div>
     </div>
@@ -50,6 +96,12 @@
         links.forEach(link => link.setAttribute('target', '_blank'));
 
 
+
+        // 'pics' klassasi ichidagi barcha <a> teglarini tanlash
+const picsLinks = document.querySelectorAll('.pics a');
+
+// Har bir <a> tegiga target="_blank" qo'shish
+picsLinks.forEach(link => link.setAttribute('target', '_blank'));
 
 
 
