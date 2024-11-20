@@ -97,27 +97,27 @@
 
 
 
-        // 'pics' klassasi ichidagi barcha <a> teglarini tanlash
-const picsLinks = document.querySelectorAll('.pics a');
+                
+        const picsLinks = document.querySelectorAll('.pics a');
+        
+        
+        picsLinks.forEach(link => link.setAttribute('target', '_blank'));
 
-// Har bir <a> tegiga target="_blank" qo'shish
-picsLinks.forEach(link => link.setAttribute('target', '_blank'));
 
 
-
-                // Tugmani tanlaymiz
+                
         const backToTop = document.getElementById('backToTop');
         
-        // Sahifa skroll bo‘lganda tugmani ko‘rsatamiz
+        
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // 300px dan pastga tushganda
+            if (window.scrollY > 300) { 
                 backToTop.style.display = 'block';
             } else {
                 backToTop.style.display = 'none';
             }
         });
         
-        // Tugma bosilganda yuqoriga qaytamiz
+        
         backToTop.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
